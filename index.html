@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Blog</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/model.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1>Todo Blog</h1>
+        <ul class="links">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Blog by ID</a></li>
+        </ul>
+        <div class="btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="container button">
+        <div class="main-button"><button>Add</button></div>
+        <div class="clear-button"><button>Clear All</button></div>
+      </div>
+    </div>
+    <div class="popup clear">
+      <div class="popup-content">
+        <h3>Confirm Clear?</h3>
+        <p>It will clear all the data in local storage.</p>
+        <div class="options">
+          <button id="cancel">Cancel</button>
+          <button id="confirm">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-close add">
+          <i class="fa-solid fa-rectangle-xmark"></i>
+        </div>
+        <form id="form">
+          <label for="img">Select image:</label>
+          <input type="file" id="img" name="img" accept="image/*" />
+          <label for="title">Title:</label>
+          <input type="text" id="title" />
+          <label for="desc">Description:</label>
+          <textarea name="desc" id="desc"></textarea>
+          <input type="submit" />
+        </form>
+      </div>
+    </div>
+    <!-- update modal -->
+    <div class="modal update">
+      <div class="modal-content update">
+        <div class="modal-close update">
+          <i class="fa-solid fa-rectangle-xmark"></i>
+        </div>
+        <form id="form">
+          <label for="img">Select image:</label>
+          <input type="file" id="updatedImg" name="img" accept="image/*" />
+          <label for="title">Title:</label>
+          <input type="text" id="updatedTitle" />
+          <label for="desc">Description:</label>
+          <textarea name="desc" id="updatedDesc"></textarea>
+          <input type="button" value="Update" id="updateForm" />
+        </form>
+      </div>
+    </div>
+    <div class="blog-container">
+      <h1>Blogs</h1>
+      <div class="blogs">
+        
+      </div>
+    </div>
+    <script src="scipt.js"></script>
+  </body>
+</html>
